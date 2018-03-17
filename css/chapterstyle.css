@@ -1,0 +1,262 @@
+
+
+section p:first-of-type::first-letter { 
+		font-size: 2em;
+	}
+  /*Set the drop cap for each chapter*/
+
+
+
+#atc{
+	color: gray;
+	padding-right: 1%
+	padding-left:1%;
+	}
+/*Set the color and padding of the main article*/
+/*atc is the id of main article*/
+
+section{
+		font-size: 20px;
+		float: right;
+		width: 50%;
+		margin-right: 15%;
+		padding-left: 2%;
+		padding-right: 2%;	
+	}
+/*set the normal format of section*/
+
+h1,h2,h3 {
+		color: gray;
+		width: 50%;
+		margin-right:2%;
+		margin-left:35%;		
+}
+/*Set the normal format of all headings*/
+
+header{
+		margin-top: 20px;
+	}
+/*modify the margin of header*/
+
+footer {
+
+		clear: right;
+		padding-left: 35%;
+		padding-top: 5%;
+	}
+  /*modify the padding of footer*/
+
+footer p{
+	font-size: 1em;
+}
+/*modify the font size of the p in footer*/
+
+figure img{
+		display: block;
+		border: 1px solid #8a8a8a;
+	}
+  /*set the display mode to block for all the pictures in article*/
+  /*and set a border of all the pictures*/
+
+body{
+	margin: 0;
+	background: url(images/bg.jpg);
+}
+/*make sure there is no margin of body*/
+/*set the background of the chapter page (a better version of #A5DEE4)*/
+
+#rs{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+/*rs can responsive the pics*/
+
+ul {
+	position: fixed;
+	width:100%;
+    list-style-type: none;
+    margin-top: -16px;
+    padding: 0;
+    
+    background-color: #bad39e;
+    padding-left: 20%;
+   
+	}
+  /*set the format of top nav bar*/
+
+li {
+    display: inline-block;
+	}
+/*set the horzional top nav bar by set the inline block*/
+
+li a, .dropbtn {
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+    display: inline-block;
+    color: #88B9DA;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+	}
+  /*set the format of the drop down element*/
+
+li a:hover, .dropdown:hover .dropbtn {
+    color:gray;
+	}
+  /*set the font color of hovering dropdown element*/
+
+li.dropdown {
+    display: inline-block;
+	}
+  /*set the display to inline block of dropdown menu*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	}
+  /*set the format of dropdown content*/
+
+.dropdown-content a {
+    color: #88B9DA;
+    padding: 12px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+  /*set the format of hyperlinks ("chapter *") in the dropdown*/
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color:gray;
+}
+/*set the background color and color of hyperlinks of hovering dropdown*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	}
+
+.fixed-nav-bar{
+	display: block;
+	background-color: #bad39e;
+	z-index: 9999;
+   	top: 0;
+	}
+  /*pinning the top nav bar in the top of window all the time*/
+
+#bottomnav a{
+	padding-right: 
+	font-size: 1.25em;
+  font-weight: 600;
+	color: gray;
+}
+/*modify the format of "previous" and "next" in each page of chapter*/
+
+#totop {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em; 
+}
+/*the format of "top" button*/
+
+#totop:hover {
+  background-color: #555;
+}
+/*the format of "top" button be hovering*/
+
+#fontsizeL {
+  position: fixed;
+  bottom: 5%;
+  left: 120px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em;
+}
+/*the format of "Font Size +" button*/
+
+#fontsizeL:hover {
+  background-color: #555;
+}
+/*the format of "Font Size +" button be hovering*/
+
+
+#fontsizeS {
+  position: fixed;
+  bottom: 5%;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em;
+}
+/*the format of "Font Size -" button*/
+
+#fontsizeS:hover {
+  background-color: #555;
+}
+/*the format of "Font Size -" button be hovering*/
+
+#nightmodeB {
+  position: fixed;
+  bottom: 15%;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 300px;
+}
+/*the format of "High Contrast Mode" button*/
+/*In previous version of this webiste, I gonna design a "Night Mode" button for*/
+/*the websit. However I found that "High Contrast Mode" should be better to improve*/
+/*the User Experience. So I modified the effect of it and change the name to*/
+/*"High Contrast Mode" of this js interactivity button*/
+
+#nightmodeB:hover {
+  background-color: #555;
+}
+/*the format of "High Contrast Mode" button be hovering*/
+
+
+
+
+
+/*below is the css code of slideshow in the "About" page from W3School*/
+/*Reference:https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr
+*/
+.mySlides {
+  display:none;
+}
+
+.slides{
+  margin: 10px;
+  float: left;
+}
+
+

@@ -1,0 +1,144 @@
+body{
+	background: url(images/bg.jpg);
+	margin: 0;	
+	}
+/*make sure there is no margin of body*/
+/*set the background of the chapter page (a better version of #A5DEE4)*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bad39e;
+   padding-left: 20%;
+   
+	}
+/*set the format of top nav bar*/
+
+li {
+    display: inline-block;
+	}
+/*set the horzional top nav bar by set the inline block*/
+
+
+li a, .dropbtn {
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+    display: inline-block;
+    color: #88B9DA;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+	}
+ /*set the format of the drop down element*/
+
+li a:hover, .dropdown:hover .dropbtn {
+    color:gray;
+	}
+/*set the font color of hovering dropdown element*/
+
+li.dropdown {
+    display: inline-block;
+	}
+/*set the display to inline block of dropdown menu*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	}
+/*set the format of dropdown content*/
+
+.dropdown-content a {
+    color: #88B9DA;
+    padding: 12px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+	}
+	/*set the format of hyperlinks ("chapter *") in the dropdown*/
+
+
+
+.dropdown-content a:hover {
+	background-color: #F9F9F9;
+	color:gray;
+}
+/*set the background color and color of hyperlinks of hovering dropdown*/
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	}
+/*set the display to block of the dropdown-content be hovering*/
+
+
+
+.fixed-nav-bar{
+	
+	display: block;
+	background-color: #bad39e;
+	z-index: 9999;
+   	top: 0;
+
+	}
+/*pinning the top nav bar in the top of window all the time*/
+
+
+img{
+	position: absolute;
+	right: 0;
+	margin-top: -16px;
+	padding-left: none;
+	float: right;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	z-index: -1;
+	}
+/*Keep the cover image in the whole right of the page*/
+
+.start{
+	position: absolute;
+	
+	padding: 0;
+	float:left;
+	padding-left: 5px;
+	left: 10%;
+	top: 50%;
+	}
+	/*Set the format of start reading button*/
+
+.start a{
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+	text-decoration: none;
+	color: #88B9DA;
+	display: block;
+	width: 190px;
+	height: 45px;
+	border: 3px solid #88B9DA;
+	}
+	/*set the format of hyperlink of start button*/
+
+.start :hover{
+	background-color: #88B9DA;
+	color:grey;
+	}
+	/*set the format of start button be hovering*/
+
+#hint{
+	display: none;
+	font-family: 'Lobster', cursive;
+	color:gray;
+	font-size: 1em;
+	background-color: none;
+	margin: auto;
+
+}
+/*set the format of hints of "start reading" button when it's displaying*/
